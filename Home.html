@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách thành viên</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>x
+    <h1>Danh sách các thành viên của nhóm</h1>
+    <div class="user-list">
+        <div class="user-card" onclick="goToProfile('tranquoctrung/trantrung')">
+            <img src="./images//trantrung.jpg" alt="User 1">
+            <h3>Trần Quốc Trung</h3>
+        </div>
+        <div class="user-card" onclick="goToProfile('2')">
+            <img src="avatar2.jpg" alt="User 2">
+            <h3>Trần Thị B</h3>
+        </div>
+        <div class="user-card" onclick="goToProfile('3')">
+            <img src="avatar3.jpg" alt="User 3">
+            <h3>Lê Văn C</h3>
+        </div>
+        <div class="user-card" onclick="goToProfile('3')">
+            <img src="avatar3.jpg" alt="User 3">
+            <h3>Lê Văn C</h3>
+        </div>
+    </div>
+
+    <script>
+        function goToProfile(username) {
+            window.location.href = username + ".html"; // Điều hướng đến trang cụ thể
+        }
+    </script>
+
+</body>
+</html>
